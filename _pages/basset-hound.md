@@ -3,7 +3,7 @@ layout: null
 permalink: /animal/basset-hound
 ---
 
-<img src="/assets/images/animals/10.png">
+![basset-hound]({{ site.baseurl }}/assets/images/animals/basset-hound.png)
 <canvas id="basset-hound" width="500" height="500"></canvas>
-<script src="/assets/js/basset-hound.js"></script>
+<script src="{{ site.baseurl }}/assets/js/basset-hound.js"></script>
 
