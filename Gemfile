@@ -1,8 +1,8 @@
-source "https://rubygems.org"
-ruby RUBY_VERSION
+source 'https://rubygems.org'
 
-gem "jekyll", "3.4.3"
-gem "github-pages", group: :jekyll_plugins
+require 'json'
+require 'open-uri'
+versions = JSON.parse(open('https://pages.github.com/versions.json').read)
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'github-pages', versions['github-pages']
+gem "html-proofer"
