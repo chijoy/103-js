@@ -1,6 +1,6 @@
 ---
 layout: null
-permalink: /animal/gray-wolf
+permalink: /animal/basset-hound
 ---
 
 <img src="/assets/images/animals/10.png">
