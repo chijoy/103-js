@@ -46,7 +46,19 @@ ctx.lineWidth = 1;
 ctx.strokeStyle="#b4c2cd";
 ctx.stroke();
 
+// right eye
+// moveTo start position
+// bezierCurveTo x, y of left angle, x, y of right angle, end position
+ctx.beginPath();
+ctx.moveTo(309, 132);
+ctx.bezierCurveTo(306, 153, 332, 154, 333, 144);
+ctx.fillStyle="black";
+ctx.fill();
+ctx.strokeStyle="black";
+ctx.stroke();
+
 // outer nose
+
 ctx.beginPath();
 ctx.moveTo(275, 93);
 ctx.lineTo(261, 159);
@@ -64,6 +76,7 @@ ctx.fill();
 ctx.stroke();
 
 // nose
+
 ctx.beginPath();
 ctx.moveTo(275, 200);
 ctx.lineTo(242, 213);
