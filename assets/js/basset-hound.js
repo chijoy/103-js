@@ -124,3 +124,16 @@ ctx.strokeStyle="#76300e";
 ctx.fillStyle="#76300e";
 ctx.fill();
 ctx.stroke();
+
+// neck
+
+ctx.beginPath();
+ctx.moveTo(236, 464);
+ctx.lineTo(315, 464);
+ctx.lineTo(315, 307);
+ctx.lineTo(275, 297);
+ctx.lineTo(236, 307);
+ctx.fillStyle="#c77321";
+ctx.fill();
+ctx.strokeStyle="#c77321";
+ctx.stroke();
