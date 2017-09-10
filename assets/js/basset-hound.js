@@ -58,6 +58,22 @@ ctx.lineTo(332, 206);
 ctx.lineTo(288, 159);
 ctx.lineTo(275, 93);
 ctx.lineWidth = 1;
-// ctx.strokeStyle="#f8f1cc";
+ctx.strokeStyle="#f8f1cc";
+ctx.fillStyle="#f8f1cc";
+ctx.fill();
+ctx.stroke();
+
+// nose
+ctx.beginPath();
+ctx.moveTo(275, 200);
+ctx.lineTo(242, 213);
+ctx.lineTo(242, 253);
+ctx.lineTo(275, 261);
+ctx.lineTo(308, 253);
+ctx.lineTo(308, 213);
+ctx.lineTo(275, 200);
+ctx.lineWidth = 1;
 ctx.strokeStyle="black";
+ctx.fillStyle="black";
+ctx.fill();
 ctx.stroke();
