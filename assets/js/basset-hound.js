@@ -107,3 +107,20 @@ ctx.strokeStyle="#76300e";
 ctx.fillStyle="#76300e";
 ctx.fill();
 ctx.stroke();
+
+// right ear
+
+ctx.beginPath();
+ctx.moveTo(374, 75);
+ctx.lineTo(351, 195);
+ctx.lineTo(341, 315);
+ctx.lineTo(315, 307);
+ctx.lineTo(315, 464);
+ctx.lineTo(378, 464);
+ctx.bezierCurveTo(411, 463, 441, 450, 448, 315);
+ctx.lineTo(374, 75);
+ctx.lineWidth = 1;
+ctx.strokeStyle="#76300e";
+ctx.fillStyle="#76300e";
+ctx.fill();
+ctx.stroke();
