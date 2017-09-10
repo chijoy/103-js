@@ -5,7 +5,7 @@ var ctx = canvas.getContext("2d");
 // keep for reference
 
 ctx.beginPath();
-ctx.arc(280, 150, 130, 0, 2 * Math.PI);
+ctx.arc(275, 158, 130, 0, 2 * Math.PI);
 ctx.fillStyle="#c77321";
 ctx.fill();
 ctx.strokeStyle="#c77321";
@@ -88,5 +88,22 @@ ctx.lineTo(275, 200);
 ctx.lineWidth = 1;
 ctx.strokeStyle="black";
 ctx.fillStyle="black";
+ctx.fill();
+ctx.stroke();
+
+// left ear
+
+ctx.beginPath();
+ctx.moveTo(177, 75);
+ctx.lineTo(200, 195);
+ctx.lineTo(210, 315);
+ctx.lineTo(236, 307);
+ctx.lineTo(236, 464);
+ctx.lineTo(173, 464);
+ctx.bezierCurveTo(140, 463, 110, 450, 103, 315);
+ctx.lineTo(177, 75);
+ctx.lineWidth = 1;
+ctx.strokeStyle="#76300e";
+ctx.fillStyle="#76300e";
 ctx.fill();
 ctx.stroke();
