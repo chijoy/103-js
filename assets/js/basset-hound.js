@@ -14,9 +14,9 @@ ctx.stroke();
 // outer left eye
 
 ctx.beginPath();
-ctx.moveTo(204, 125);
-ctx.lineTo(256, 100);
-ctx.lineTo(213, 170);
+ctx.moveTo(204, 150);
+ctx.lineTo(256, 125);
+ctx.lineTo(213, 195);
 ctx.fillStyle="#b4c2cd";
 ctx.fill();
 ctx.lineWidth = 1;
@@ -29,8 +29,8 @@ ctx.closePath();
 // bezierCurveTo x, y of left angle, x, y of right angle, end position
 
 ctx.beginPath();
-ctx.moveTo(216, 120);
-ctx.bezierCurveTo(219, 129, 245, 128, 241, 108);
+ctx.moveTo(216, 145);
+ctx.bezierCurveTo(219, 154, 245, 153, 241, 133);
 ctx.fillStyle="black";
 ctx.fill();
 ctx.stroke();
