@@ -19,11 +19,9 @@ ctx.bezierCurveTo(227, 15, 324, 15, 374, 75);
 ctx.lineTo(351, 195);
 ctx.lineTo(341, 315);
 ctx.lineTo(210, 315);
-
 ctx.fillStyle="#c77321";
 ctx.fill();
-ctx.strokeStyle="#c77321";
-ctx.stroke();
+ctx.closePath();
 
 // outer left eye
 
@@ -36,6 +34,7 @@ ctx.fill();
 ctx.lineWidth = 1;
 ctx.strokeStyle="#b4c2cd";
 ctx.stroke();
+ctx.closePath();
 
 // left eye
 // moveTo start position
@@ -47,6 +46,7 @@ ctx.bezierCurveTo(219, 154, 245, 153, 241, 132);
 ctx.fillStyle="black";
 ctx.fill();
 ctx.stroke();
+ctx.closePath();
 
 // outer right eye
 
@@ -59,6 +59,7 @@ ctx.fill();
 ctx.lineWidth = 1;
 ctx.strokeStyle="#b4c2cd";
 ctx.stroke();
+ctx.closePath();
 
 // right eye
 // moveTo start position
@@ -71,6 +72,7 @@ ctx.fillStyle="black";
 ctx.fill();
 ctx.strokeStyle="black";
 ctx.stroke();
+ctx.closePath();
 
 // outer nose
 
@@ -84,11 +86,9 @@ ctx.lineTo(341, 315);
 ctx.lineTo(332, 206);
 ctx.lineTo(288, 159);
 ctx.lineTo(275, 93);
-ctx.lineWidth = 1;
-ctx.strokeStyle="#f8f1cc";
 ctx.fillStyle="#f8f1cc";
 ctx.fill();
-ctx.stroke();
+ctx.closePath();
 
 // nose
 
@@ -100,11 +100,9 @@ ctx.lineTo(275, 261);
 ctx.lineTo(308, 253);
 ctx.lineTo(308, 213);
 ctx.lineTo(275, 200);
-ctx.lineWidth = 1;
-ctx.strokeStyle="black";
 ctx.fillStyle="black";
 ctx.fill();
-ctx.stroke();
+ctx.closePath();
 
 // left ear
 
@@ -117,11 +115,19 @@ ctx.lineTo(236, 464);
 ctx.lineTo(173, 464);
 ctx.bezierCurveTo(140, 463, 110, 450, 103, 315);
 ctx.lineTo(177, 75);
-ctx.lineWidth = 1;
-ctx.strokeStyle="#76300e";
 ctx.fillStyle="#76300e";
 ctx.fill();
-ctx.stroke();
+ctx.closePath();
+
+// body
+
+ctx.beginPath();
+ctx.moveTo(448, 315);
+ctx.lineTo(548, 464);
+ctx.lineTo(378, 464);
+ctx.fillStyle="#c77321";
+ctx.fill();
+ctx.closePath();
 
 // right ear
 
@@ -134,11 +140,9 @@ ctx.lineTo(315, 464);
 ctx.lineTo(378, 464);
 ctx.bezierCurveTo(411, 463, 441, 450, 448, 315);
 ctx.lineTo(374, 75);
-ctx.lineWidth = 1;
-ctx.strokeStyle="#76300e";
 ctx.fillStyle="#76300e";
 ctx.fill();
-ctx.stroke();
+ctx.closePath();
 
 // neck
 
@@ -150,9 +154,5 @@ ctx.lineTo(275, 297);
 ctx.lineTo(236, 307);
 ctx.fillStyle="#c77321";
 ctx.fill();
-ctx.strokeStyle="#c77321";
-ctx.stroke();
+ctx.closePath();
 
-
-
-// use close path
