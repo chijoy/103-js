@@ -4,8 +4,22 @@ var ctx = canvas.getContext("2d");
 // outer circle of face
 // keep for reference
 
+// ctx.beginPath();
+// ctx.arc(275, 158, 130, 0, 2 * Math.PI);
+// ctx.fillStyle="#c77321";
+// ctx.fill();
+// ctx.strokeStyle="black";
+// ctx.stroke();
+
+// head
+
 ctx.beginPath();
-ctx.arc(275, 158, 130, 0, 2 * Math.PI);
+ctx.moveTo(177, 75);
+ctx.bezierCurveTo(227, 15, 324, 15, 374, 75);
+ctx.lineTo(351, 195);
+ctx.lineTo(341, 315);
+ctx.lineTo(210, 315);
+
 ctx.fillStyle="#c77321";
 ctx.fill();
 ctx.strokeStyle="#c77321";
@@ -49,6 +63,7 @@ ctx.stroke();
 // right eye
 // moveTo start position
 // bezierCurveTo x, y of left angle, x, y of right angle, end position
+
 ctx.beginPath();
 ctx.moveTo(309, 132);
 ctx.bezierCurveTo(306, 153, 332, 154, 333, 144);
@@ -137,3 +152,7 @@ ctx.fillStyle="#c77321";
 ctx.fill();
 ctx.strokeStyle="#c77321";
 ctx.stroke();
+
+
+
+// use close path
