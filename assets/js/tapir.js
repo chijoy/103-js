@@ -6,8 +6,8 @@ const COLOR = {
     EAR_TIP: '#FFB300',
     HEAD: '#736361',
     NECK: '#3E1D04',
-    // MUSSEL: '#F5F0CE',
-    // EAR: '#62391A'
+    OUTER_NOSE: '#806F6c',
+    INNER_NOSE: '#8A7976',
   };
   
 // LEFT EAR
@@ -76,4 +76,32 @@ ctx.lineTo(275, 71);
 ctx.closePath();
 ctx.fillStyle = COLOR.HEAD;
 ctx.fill();
+
+// OUTER NOSE
+ctx.beginPath();
+ctx.moveTo(221, 200);
+ctx.lineTo(250, 443);
+ctx.lineTo(300, 443);
+ctx.lineTo(330, 200);
+ctx.lineTo(275, 235);
+ctx.lineTo(221, 200);
+ctx.closePath();
+ctx.fillStyle = COLOR.OUTER_NOSE;
+ctx.fill();
+
+// INNER NOSE
+ctx.beginPath();
+ctx.moveTo(275, 71);
+ctx.lineTo(250, 81);
+ctx.lineTo(263, 200);
+ctx.lineTo(250, 443);
+ctx.lineTo(275, 451);
+ctx.lineTo(300, 443);
+ctx.lineTo(287, 200);
+ctx.lineTo(300, 81);
+ctx.moveTo(275, 71);
+ctx.closePath();
+ctx.fillStyle = COLOR.INNER_NOSE;
+ctx.fill();
+
 
