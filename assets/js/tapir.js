@@ -8,6 +8,7 @@ const COLOR = {
     NECK: '#3E1D04',
     OUTER_NOSE: '#806F6c',
     INNER_NOSE: '#8A7976',
+    EYE: '#241F20',
   };
   
 // LEFT EAR
@@ -99,9 +100,25 @@ ctx.lineTo(275, 451);
 ctx.lineTo(300, 443);
 ctx.lineTo(287, 200);
 ctx.lineTo(300, 81);
-ctx.moveTo(275, 71);
+ctx.lineTo(275, 71);
 ctx.closePath();
 ctx.fillStyle = COLOR.INNER_NOSE;
 ctx.fill();
 
+// LEFT EYE
+ctx.beginPath();
+ctx.moveTo(195, 202);
+ctx.lineTo(195, 232);
+ctx.lineTo(222, 236);
+ctx.closePath();
+ctx.fillStyle = COLOR.EYE;
+ctx.fill();
 
+// RIGHT EYE
+ctx.beginPath();
+ctx.moveTo(357, 202);
+ctx.lineTo(357, 232);
+ctx.lineTo(330, 236);
+ctx.closePath();
+ctx.fillStyle = COLOR.EYE;
+ctx.fill();
