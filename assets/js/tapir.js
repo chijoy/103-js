@@ -1,16 +1,16 @@
-var canvas = document.getElementById('tapir');
-var ctx = canvas.getContext('2d');
+const canvas = document.getElementById('tapir');
+const ctx = canvas.getContext('2d');
 
 const COLOR = {
-    EAR: '#3E1D04',
-    EAR_TIP: '#FFB300',
-    HEAD: '#736361',
-    NECK: '#3E1D04',
-    OUTER_NOSE: '#806F6c',
-    INNER_NOSE: '#8A7976',
-    EYE: '#241F20',
-  };
-  
+  EAR: '#3E1D04',
+  EAR_TIP: '#FFB300',
+  HEAD: '#736361',
+  NECK: '#3E1D04',
+  OUTER_NOSE: '#806F6c',
+  INNER_NOSE: '#8A7976',
+  EYE: '#241F20'
+};
+
 // LEFT EAR
 ctx.beginPath();
 ctx.moveTo(178, 25);
@@ -38,7 +38,7 @@ ctx.lineTo(320, 90);
 ctx.lineTo(332, 40);
 ctx.closePath();
 ctx.fillStyle = COLOR.EAR;
-ctx.fill(); 
+ctx.fill();
 
 // RIGHT EAR TIP
 ctx.beginPath();
